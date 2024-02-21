@@ -22,10 +22,10 @@
           "todo"
         ],
         "summary": "Get the list of all todos",
-        "operationId": "tasksGetAll",
+        "operationId": "todosGetAll",
         "responses": {
           "200": {
-            "description": "List of all tasks",
+            "description": "List of all todos",
             "content": {
               "application/json": {
                 "schema": {
@@ -51,7 +51,7 @@
       },
       "post": {
         "tags": [
-          "task"
+          "todo"
         ],
         "summary": "Create a new Todo",
         "operationId": "todoCreate",
