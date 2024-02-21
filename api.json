@@ -16,6 +16,41 @@
     }
   ],
   "paths": {
+    "/tododone": {
+      "get": {
+        "tags": [
+          "todo"
+        ],
+        "summary": "Get the list of all completed todos",
+        "operationId": "todosGetAllCompleted",
+        "responses": {
+          "200": {
+            "description": "List of all completed todos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Todo"
+                  }
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Generic error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": true
+      }
+    },
     "/todo": {
       "get": {
         "tags": [
