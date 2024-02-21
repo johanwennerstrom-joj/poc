@@ -6,7 +6,12 @@
   },
   "servers": [
     {
-      "url": "http://localhost:8080/todoapp"
+      "url": "http://localhost:8080/todoapp",
+      "description": "dev"
+    },
+    {
+      "url": "https://actualservice/todoapp",
+      "description": "prod"
     }
   ],
   "tags": [
