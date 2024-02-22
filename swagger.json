@@ -8,9 +8,10 @@
     "url" : "http://localhost:8080/todoapp",
     "description" : "dev"
   }, {
-    "url" : "http://test.service."
+    "url" : "http://test.service.com/todoapp",
+    "description" : "test"
   }, {
-    "url" : "https://actualservice/todoapp",
+    "url" : "https://actualservice.com/todoapp",
     "description" : "prod"
   } ],
   "tags" : [ {
